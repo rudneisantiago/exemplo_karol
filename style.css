@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 150px 1fr 150px;
+  grid-template-columns: 300px 1fr;
+  grid-template-areas:
+    "cabecalho cabecalho"
+    "aside1 principal"
+    "footer footer";
+}
+
+header {
+  grid-area: cabecalho;
+  background-color: aqua;
+  display: flex;
+  padding: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  grid-area: principal;
+  background-color: blueviolet;
+}
+
+footer {
+  grid-area: footer;
+  background-color: green;
+}
+
+.aside1 {
+  grid-area: aside1;
+  background-color: yellow;
+}
