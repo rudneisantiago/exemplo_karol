@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+.novaclasse {
+}
+
 .grid {
   display: grid;
   height: 100vh;
